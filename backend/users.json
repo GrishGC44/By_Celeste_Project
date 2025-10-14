@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "email": "customer@byceleste.com",
+      "password": "cust123"
+    }
+  ],
+  "wholesale": [
+    {
+      "email": "wholesale@byceleste.com",
+      "password": "wh123"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>By Celeste | Natural Skincare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  
+  <header>
+    <a href="index.html" class="logo">
+      <img src="../assets/images/logo.jpg" alt="By Celeste Logo" class="site-logo">
+    </a>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="wholesale.html" class="nav-link">Wholesale</a>
+      <a href="login.html" class="nav-link">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Traditional, Natural, Exceptional Skincare</h1>
+    <p>Explore our handcrafted range of organic skincare products.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+
+  <section id="products" class="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="../assets/images/1.png" alt="Sandalwood Shaving Soap">
+        <h3>Sandalwood Shaving Soap 100g</h3>
+        <p>Apply to the face, legs or body prior to shaving to achieve a close, smooth finish.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="../assets/images/2.png" alt="Mandarin Hand Cream">
+        <h3>Mandarin & Lavender Hand Cream 120mL</h3>
+        <p>Treat your hands with a rich, nourishing balm that leaves them soft and smooth.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="../assets/images/3.png" alt="Rosehip Facial Oil">
+        <h3>Organic Rosehip Facial Oil 25mL</h3>
+        <p>Regenerates skin and improves elasticity — perfect for daily use.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="about" class="about">
+    <h2>About By Celeste</h2>
+    <p>Founded in Albury, NSW, By Celeste creates luxurious natural skincare made with care, sustainability, and quality Australian ingredients.</p>
+  </section>
+
+
+  <footer>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>10 Mortimer Terrace, Leneva, VIC 3691</p>
+        <p>+61 0403 823 357</p>
+        <p>jane.byceleste@gmail.com</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/people/By-Celeste/100063829142451/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/by_celeste1/" target="_blank">Instagram</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 By Celeste. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const currentPage = location.pathname.split("/").pop();
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+
+</body>
+</html>
